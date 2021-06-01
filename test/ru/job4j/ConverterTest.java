@@ -14,7 +14,7 @@ public class ConverterTest {
     }
 
     @Test
-    public void rubleToDollar() {
+    public void whenConvert180RblThen3Dlr() {
         int in = 180;
         int expected = 3;
         int out = Converter.rubleToDollar(in);
