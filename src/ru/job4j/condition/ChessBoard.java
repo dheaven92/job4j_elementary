@@ -8,11 +8,7 @@ public class ChessBoard {
 
     public static int way(int x1, int y1, int x2, int y2) {
 
-        if (isValueValid(x1)
-                && isValueValid(x2)
-                && isValueValid(y1)
-                && isValueValid(y2)
-                && x1 != x2 && y1 != y2) {
+        if (isValueValid(x1) && isValueValid(x2) && isValueValid(y1) && isValueValid(y2)) {
 
             int xDifference = Math.abs(x2 - x1);
             int yDifference = Math.abs(y2 - y1);
