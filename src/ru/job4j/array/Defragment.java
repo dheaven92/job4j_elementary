@@ -11,11 +11,10 @@ public class Defragment {
     public static String[] compress(String[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null) {
-                int nullPoint = i;
-                for (int j = i; j < array.length; j++) {
+                for (int j = i + 1; j < array.length; j++) {
                     if (array[j] != null) {
-                        int nonNullPoint = j;
-                        swap(array, nullPoint, nonNullPoint);
+                        array[i] = array[j];
+                        array[j] = null;
                         break;
                     }
                 }
